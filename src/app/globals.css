@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @config "../../tailwind.config.ts";
+@supports (-webkit-touch-callout: none) {
+  button, 
+  a, 
+  input, 
+  select, 
+  textarea,
+  div[role="button"] {
+    touch-action: manipulation; 
+    cursor: pointer; 
+  }
+}

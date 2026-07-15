@@ -9,7 +9,7 @@ export function Header() {
       <header className="flex justify-between items-center p-6 bg-primaria text-white relative z-50 shadow-md">
         <div className="text-2xl font-bold font-sans">🍞 Logo Marcela</div>
 
-        <button 
+        <button
           className="md:hidden text-3xl focus:outline-none p-2"
           onClick={alternarMenu}
           type="button"
@@ -27,17 +27,19 @@ export function Header() {
 
       {/* Fundo Escurecido */}
       {menuAberto && (
-        <div 
+        <div
           className="md:hidden fixed inset-0 bg-black/40 z-40 transition-opacity"
           onClick={fecharMenu}
+          role="button"       
+          tabIndex={0}     
+          aria-label="Fechar menu" 
         />
       )}
 
       {/* Menu Lateral Deslizante */}
-      <div 
-        className={`md:hidden fixed top-0 right-0 h-full w-64 bg-fundo text-secundaria shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
-          menuAberto ? "translate-x-0" : "translate-x-full"
-        }`}
+      <div
+        className={`md:hidden fixed top-0 right-0 h-full w-64 bg-fundo text-secundaria shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${menuAberto ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <div className="flex justify-end p-6 border-b border-primaria-clara/30">
           <button onClick={fecharMenu} className="text-3xl text-primaria hover:text-secundaria transition-colors p-2" type="button">
