@@ -21,17 +21,34 @@ export function useCatalog() {
                     name: "Bolo de Festa Decorado",
                     sizes: "15cm | 20cm | 25cm (Diâmetro)",
                     filling: "Brigadeiro gourmet e morangos frescos.",
+                },
+                {
+                    id: "b2",
+                    name: "Bolo de Festa Decorado",
+                    sizes: "15cm | 20cm | 25cm (Diâmetro)",
+                    filling: "Brigadeiro gourmet e morangos frescos.",
+                },
+            ]
+        },
+        {
+            title: "Doces",
+            items: [
+                {
+                    id: "d1",
+                    name: "Brigadeiros Tradicionais",
+                    sizes: "Unidade (20g) ou Cento",
+                    filling: "Ao leite, meio amargo, ninho com nutella, paçoca e churros.",
                 }
             ]
         },
         {
-            title: "Doces & Doces Modelados",
+            title: "Doces Modelados",
             items: [
                 {
-                    id: "d1",
-                    name: "Brigadeiros Personalizados",
-                    sizes: "Unidade (20g) ou Cento",
-                    filling: "Ao leite, meio amargo, pistache. Modelagem em pasta americana.",
+                    id: "dm1",
+                    name: "Doces Personalizados 3D",
+                    sizes: "Unidade (Pedido mínimo de 10)",
+                    filling: "Modelagem artística em pasta americana. Recheio de trufa de chocolate ou limão.",
                 }
             ]
         }
