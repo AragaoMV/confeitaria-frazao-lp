@@ -8,7 +8,7 @@ export function Header() {
 
   return (
     <>
-      <header className="flex justify-between items-center px-4 sm:px-6 py-4 bg-primaria text-secundaria relative z-50 shadow-md">
+      <header className="flex justify-between items-center px-4 sm:px-6 py-4 bg-primaria text-secundaria fixed top-0 left-0 w-full z-50 shadow-md">
         
        {/* ESQUERDA: Logo */}
         <div className="flex-1 flex justify-start">

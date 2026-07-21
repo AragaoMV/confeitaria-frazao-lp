@@ -12,9 +12,9 @@ export function Footer() {
                     <Image 
                         src="/imagens/footer/monograma.png" 
                         alt="Monograma Confeitaria Marcela" 
-                        width={96} 
-                        height={96} 
-                        className="w-20 h-20 md:w-24 md:h-24 object-cover mb-5 border-2" 
+                        width={120} 
+                        height={120} 
+                        className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] mx-auto md:mx-0 object-cover mb-5 border-2" 
                     />
 
                     <h3 className="text-3xl font-sans mb-4 text-primaria-clara">Confeitaria Marcela</h3>
