@@ -16,7 +16,7 @@ export function Hero() {
           </p>
 
           <a href="#catalogo" className="inline-block bg-secundaria text-fundo px-10 py-4 rounded-md font-sans text-xl hover:bg-secundaria/90 transition-transform hover:scale-105 shadow-xl mb-16">
-            Escolher um doce
+            Conheça nossos doces
           </a>
 
           {/* AS 3 MINIATURAS INFERIORES */}

@@ -29,7 +29,7 @@ export function About() {
             
             <div className="space-y-4 md:space-y-6 text-base md:text-lg font-serif text-secundaria/80 mb-8 md:mb-10">
               <p>
-                A Confeitaria Marcela nasceu do amor incondicional por criar doces artesanais. 
+                A Marcela Frazão Doces nasceu do amor incondicional por criar doces artesanais. 
                 Nosso foco é entregar sabor autêntico e qualidade impecável em cada detalhe.
               </p>
               <p>
@@ -51,7 +51,7 @@ export function About() {
               {/* Botão do Curso Hotmart (Google Material Design) */}
               <a href="#" className="text-secundaria hover:text-primaria transition-colors flex items-center justify-start gap-2 group w-fit">
                 <MdSchool className="text-xl md:text-2xl shrink-0" />
-                Curso na Hotmart
+                Aprenda comigo
                 <span className="group-hover:translate-x-2 transition-transform">→</span>
               </a>
 
