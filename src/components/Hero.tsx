@@ -7,7 +7,7 @@ export function Hero() {
       {/* CONTEÚDO DA ESQUERDA (Textos, Botão e Miniaturas) */}
       <div className="w-full md:w-1/2 px-6 flex justify-center items-center z-10 mb-16 md:mb-0">
 
-        <div className="w-full max-w-lg xl:max-w-xl flex flex-col items-center md:items-start text-center md:text-left">
+        <div className="w-full max-w-lg xl:max-w-2xl flex flex-col items-center md:items-start text-center md:text-left">
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-sans text-secundaria mb-6 uppercase tracking-wider leading-tight">
             Bolos e <br className="hidden md:block" /> Sobremesas
@@ -25,21 +25,21 @@ export function Hero() {
           <div className="flex flex-row justify-center md:justify-start gap-3 sm:gap-6 w-full">
 
             {/* Miniatura 1 */}
-            <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-white p-2 shadow-lg border border-primaria/40 transform -rotate-3 transition-transform hover:rotate-0">
+            <div className="relative w-28 h-36 sm:w-44 sm:h-60 lg:w-48 lg:h-64 bg-white p-2 shadow-lg border border-primaria/40 transform -rotate-3 transition-transform hover:rotate-0">
               <div className="relative w-full h-full overflow-hidden">
                 <Image src="/imagens/hero/foto1.png" alt="Doce 1" fill className="object-cover" />
               </div>
             </div>
 
             {/* Miniatura 2 */}
-            <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-white p-2 shadow-lg border border-primaria/40 transform rotate-3 translate-y-2 transition-transform hover:rotate-0">
+            <div className="relative w-28 h-36 sm:w-44 sm:h-60 lg:w-48 lg:h-64 bg-white p-2 shadow-lg border border-primaria/40 transform rotate-3 translate-y-2 transition-transform hover:rotate-0">
               <div className="relative w-full h-full overflow-hidden">
                 <Image src="/imagens/hero/foto2.png" alt="Doce 2" fill className="object-cover" />
               </div>
             </div>
 
-            {/* Miniatura 3 (Com o recorte) */}
-            <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-white p-2 shadow-lg border border-primaria/40 rounded-tl-[30px] transform -translate-y-2 transition-transform hover:-translate-y-4">
+            {/* Miniatura 3 */}
+            <div className="relative w-28 h-36 sm:w-44 sm:h-60 lg:w-48 lg:h-64 bg-white p-2 shadow-lg border border-primaria/40 rounded-tl-[30px] transform -translate-y-2 transition-transform hover:-translate-y-4">
               <div className="relative w-full h-full rounded-tl-[24px] overflow-hidden">
                 <Image src="/imagens/hero/foto3.png" alt="Doce 3" fill className="object-cover" />
               </div>
