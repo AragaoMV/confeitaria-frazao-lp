@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <section className="w-full min-h-screen bg-fundo flex flex-col md:flex-row pt-24 md:pt-32 pb-16 md:pb-0 overflow-hidden">
@@ -24,22 +26,22 @@ export function Hero() {
 
             {/* Miniatura 1 */}
             <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-white p-2 shadow-lg border border-primaria/40 transform -rotate-3 transition-transform hover:rotate-0">
-              <div className="w-full h-full bg-primaria-clara flex items-center justify-center text-center p-2">
-                <span className="text-secundaria text-xs font-bold">[ Foto 1 ]</span>
+              <div className="relative w-full h-full overflow-hidden">
+                <Image src="/imagens/hero/foto1.png" alt="Doce 1" fill className="object-cover" />
               </div>
             </div>
 
             {/* Miniatura 2 */}
             <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-white p-2 shadow-lg border border-primaria/40 transform rotate-3 translate-y-2 transition-transform hover:rotate-0">
-              <div className="w-full h-full bg-primaria-clara flex items-center justify-center text-center p-2">
-                <span className="text-secundaria text-xs font-bold">[ Foto 2 ]</span>
+              <div className="relative w-full h-full overflow-hidden">
+                <Image src="/imagens/hero/foto2.png" alt="Doce 2" fill className="object-cover" />
               </div>
             </div>
 
             {/* Miniatura 3 (Com o recorte) */}
             <div className="relative w-24 h-32 sm:w-32 sm:h-40 bg-white p-2 shadow-lg border border-primaria/40 rounded-tl-[30px] transform -translate-y-2 transition-transform hover:-translate-y-4">
-              <div className="w-full h-full bg-primaria-clara flex items-center justify-center text-center p-2 rounded-tl-[24px]">
-                <span className="text-secundaria text-xs font-bold">[ Foto 3 ]</span>
+              <div className="relative w-full h-full rounded-tl-[24px] overflow-hidden">
+                <Image src="/imagens/hero/foto3.png" alt="Doce 3" fill className="object-cover" />
               </div>
             </div>
 
@@ -48,13 +50,14 @@ export function Hero() {
       </div>
 
       {/* A GRANDE CURVA DA DIREITA (Imagem Principal) */}
-      <div className="w-full md:w-1/2 h-[50vh] md:h-auto bg-primaria-superclara rounded-tl-[100px] md:rounded-tl-[300px] flex items-center justify-center border-t-8 md:border-t-0 md:border-l-8 border-white shadow-2xl relative overflow-hidden">
-
-        <span className="text-secundaria font-sans text-lg absolute bg-white/70 backdrop-blur-sm px-6 py-3 rounded-lg z-10 shadow-lg text-center mx-4">
-          [ Foto Principal: Bolo Grande Aqui ]
-        </span>
-        {/* Quando for colocar a imagem real, use a tag <Image /> aqui com as classes: object-cover w-full h-full */}
-
+      <div className="w-full md:w-1/2 h-[50vh] md:h-auto bg-primaria-superclara rounded-tl-[100px] md:rounded-tl-[300px] border-t-8 md:border-t-0 md:border-l-8 border-white shadow-2xl relative overflow-hidden">
+        <Image 
+          src="/imagens/hero/main.png" 
+          alt="Destaque Confeitaria Marcela" 
+          fill 
+          className="object-cover" 
+          priority 
+        />
       </div>
 
     </section>

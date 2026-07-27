@@ -19,8 +19,8 @@ export function Footer() {
 
                     <h3 className="text-3xl font-sans mb-4 text-primaria-clara">Marcela Frazão Doces</h3>
                     <p className="font-serif opacity-80 mb-8 md:mb-10">
-                        Doces artesanais feitos com amor. Entregamos o melhor da confeitaria na sua cidade,
-                        trazendo alegria para o seu dia a dia.
+                        Doces artesanais feitos com amor. Entregamos o melhor da confeitaria pra você,
+                        trazendo alegria no seu dia a dia.
                     </p>
 
                     <div className="font-serif text-sm opacity-60 space-y-1 mt-auto">
