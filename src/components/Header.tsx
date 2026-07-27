@@ -10,15 +10,14 @@ export function Header() {
     <>
       <header className="flex justify-between items-center px-4 sm:px-6 py-4 bg-primaria text-secundaria fixed top-0 left-0 w-full z-50 shadow-md">
         
-       {/* ESQUERDA: Logo */}
-        <div className="flex-1 flex justify-start">
-          <a href="#" className="flex items-center">
+        {/* ESQUERDA: Logo */}
+        <div className="flex-1 flex justify-start items-center">
+          <a href="#" className="relative flex items-center w-36 h-8 sm:w-44 sm:h-12 md:w-52 md:h-12">
             <Image
               src="/imagens/header/logo.png"
               alt="Logo Confeitaria Marcela"
-              width={300}
-              height={120}
-              className="w-auto h-12 sm:h-16 md:h-20 transition-all scale-200 origin-left" 
+              fill 
+              className="object-contain scale-[1.5] md:scale-220 origin-left transition-all" 
               priority
             />
           </a>
@@ -33,7 +32,6 @@ export function Header() {
         </nav>
 
         {/* DIREITA: Menu Hambúrguer (Apenas Celular) */}
-        {/* No PC, essa div fica vazia, mas como tem flex-1, ela serve de contrapeso para a Logo! */}
         <div className="flex-1 flex justify-end items-center">
           <button
             className="md:hidden hover:text-fundo transition-colors p-2 focus:outline-none"
