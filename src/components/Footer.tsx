@@ -37,8 +37,8 @@ export function Footer() {
                         <h4 className="font-sans text-lg md:text-xl font-bold mb-4 md:mb-6 text-primaria-clara">Contato</h4>
 
                         <div className="font-serif space-y-2 opacity-90 mb-6 text-sm md:text-base">
-                            <p>contato@confeitariamarcela.com</p>
-                            <p>+55 (61) 99999-9999</p>
+                            <p>marcelafrazaoca@gmail.com</p>
+                            <p>+55 (61) 98303-0191</p>
                         </div>
 
                         {/* Ícones Sociais */}

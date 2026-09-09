@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MdSchool } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 
@@ -6,7 +7,7 @@ export function About() {
     <section id="sobre" className="px-6 py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto">
         
-        {/* TÍTULO SUPERIOR (Mantém-se centralizado) */}
+        {/* TÍTULO SUPERIOR */}
         <div className="flex justify-center mb-12 md:mb-24">
           <div className="relative inline-block text-center">
             <span className="absolute inset-x-[-10px] bottom-1 h-4 md:h-6 bg-primaria-clara/60 rounded-full -z-10"></span>
@@ -19,8 +20,7 @@ export function About() {
         {/* LAYOUT DE 2 COLUNAS */}
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           
-          {/* COLUNA ESQUERDA: Textos e Links (Agora alinhados à esquerda no mobile) */}
-          {/* Mudámos de text-center para text-left */}
+          {/* COLUNA ESQUERDA: Textos e Links */}
           <div className="w-full lg:w-1/2 flex flex-col text-left">
             
             <h3 className="text-2xl md:text-4xl font-sans font-bold text-secundaria uppercase mb-4 md:mb-6 leading-snug">
@@ -38,17 +38,17 @@ export function About() {
               </p>
             </div>
 
-            {/* Links Elegantes (Agora alinhados à esquerda com justify-start) */}
+            {/* Links Elegantes */}
             <div className="flex flex-col sm:flex-row justify-start gap-4 sm:gap-6 font-sans text-base md:text-lg font-bold">
               
-              {/* Botão do Instagram (FontAwesome) */}
+              {/* Botão do Instagram */}
               <a href="#" className="text-secundaria hover:text-primaria transition-colors flex items-center justify-start gap-2 group w-fit">
                 <FaInstagram className="text-xl md:text-2xl shrink-0" />
                 Siga nosso Instagram 
                 <span className="group-hover:translate-x-2 transition-transform">→</span>
               </a>
 
-              {/* Botão do Curso Hotmart (Google Material Design) */}
+              {/* Botão do Curso Hotmart */}
               <a href="#" className="text-secundaria hover:text-primaria transition-colors flex items-center justify-start gap-2 group w-fit">
                 <MdSchool className="text-xl md:text-2xl shrink-0" />
                 Aprenda comigo
@@ -59,22 +59,28 @@ export function About() {
           </div>
 
           {/* COLUNA DIREITA: Grid de Imagens Assimétrico */}
-          {/* Ajustámos a altura para 350px no mobile para ficar mais proporcional */}
           <div className="w-full lg:w-1/2 h-[350px] sm:h-[400px] lg:h-[500px] grid grid-cols-2 gap-3 md:gap-4 mt-4 lg:mt-0">
             
             {/* Lado esquerdo do grid (2 fotos empilhadas) */}
             <div className="flex flex-col gap-3 md:gap-4 h-full">
               <div className="w-full h-1/2 bg-fundo rounded-sm flex items-center justify-center border border-primaria/20 shadow-sm relative overflow-hidden group">
                 <span className="text-secundaria/60 font-sans text-xs md:text-sm z-10">[ Foto Menor 1 ]</span>
+                {/* <Image src="/caminho-foto1.jpg" alt="Foto Menor 1" fill className="object-cover" /> */}
               </div>
               <div className="w-full h-1/2 bg-fundo rounded-sm flex items-center justify-center border border-primaria/20 shadow-sm relative overflow-hidden group">
                 <span className="text-secundaria/60 font-sans text-xs md:text-sm z-10">[ Foto Menor 2 ]</span>
+                {/* <Image src="/caminho-foto2.jpg" alt="Foto Menor 2" fill className="object-cover" /> */}
               </div>
             </div>
 
             {/* Lado direito do grid (1 foto grande vertical) */}
             <div className="w-full h-full bg-primaria-superclara rounded-sm flex items-center justify-center border border-primaria/20 shadow-sm relative overflow-hidden group">
-               <span className="text-secundaria/80 font-sans text-xs md:text-sm z-10">[ Foto Grande Vertical ]</span>
+               <Image 
+                  src="/imagens/sobre/vertical.png" 
+                  alt="Marcela Frazão" 
+                  fill 
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+               />
             </div>
 
           </div>
