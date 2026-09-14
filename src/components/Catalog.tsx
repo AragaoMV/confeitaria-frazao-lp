@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useCatalog } from "../hooks/useCatalog";
+import Image from 'next/image';
 
 export function Catalog() {
     const { catalogData } = useCatalog();
@@ -25,8 +26,8 @@ export function Catalog() {
                             onTouchStart={() => setCategoriaAtiva(category.title)}
                             type="button"
                             className={`cursor-pointer touch-manipulation font-sans text-base sm:text-xl px-2 pb-2 transition-all relative ${categoriaAtiva === category.title
-                                    ? "text-secundaria font-bold"
-                                    : "text-secundaria/60 hover:text-secundaria"
+                                ? "text-secundaria font-bold"
+                                : "text-secundaria/60 hover:text-secundaria"
                                 }`}
                         >
                             {category.title}
@@ -41,8 +42,8 @@ export function Catalog() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {categoriaAtual.items.map((product) => (
                         /* CARTÃO COMPLETO DO PRODUTO (Tudo unificado dentro dele) */
-                        <div 
-                            key={product.id} 
+                        <div
+                            key={product.id}
                             className="flex flex-col  border border-primaria/25 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-shadow h-full"
                         >
                             {/* CONTEÚDO DO CARTÃO */}
@@ -50,12 +51,21 @@ export function Catalog() {
                                 <h4 className="font-sans text-2xl sm:text-3xl text-secundaria font-bold mb-3 leading-tight">
                                     {product.name}
                                 </h4>
-                                 {/* IMAGEM DO PRODUTO */}
-                            <div className="w-full aspect-video sm:aspect-square bg-white rounded-xl mb-5 flex items-center justify-center overflow-hidden relative shadow-inner border border-primaria/20 shrink-0">
-                                <span className="text-secundaria/50 font-sans text-sm sm:text-base px-2 text-center">
-                                    [ Foto da Massa {product.name} ]
-                                </span>
-                            </div>
+                                {/* IMAGEM DO PRODUTO */}
+
+                                <div className="w-full aspect-video sm:aspect-square bg-white rounded-xl mb-5 flex items-center justify-center overflow-hidden relative shadow-inner border border-primaria/20 shrink-0">
+                                    {product.image ? (
+                                        <Image
+                                            src={product.image}
+                                            alt={`Foto de ${product.name}`}
+                                            fill
+                                            className="object-cover"
+                                        />) : (
+                                        < span className="text-secundaria/50 font-sans text-sm sm:text-base px-2 text-center">
+                                            [ Foto da Massa {product.name} ]
+                                        </span>
+                                    )}
+                                </div>
 
                                 {product.description && (
                                     <p className="font-serif text-base sm:text-lg text-secundaria/85 mb-5 leading-relaxed">
@@ -148,6 +158,6 @@ export function Catalog() {
                 )}
 
             </div>
-        </section>
+        </section >
     );
 }

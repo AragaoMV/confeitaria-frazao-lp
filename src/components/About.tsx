@@ -64,12 +64,20 @@ export function About() {
             {/* Lado esquerdo do grid (2 fotos empilhadas) */}
             <div className="flex flex-col gap-3 md:gap-4 h-full">
               <div className="w-full h-1/2 bg-fundo rounded-sm flex items-center justify-center border border-primaria/20 shadow-sm relative overflow-hidden group">
-                <span className="text-secundaria/60 font-sans text-xs md:text-sm z-10">[ Foto Menor 1 ]</span>
-                {/* <Image src="/caminho-foto1.jpg" alt="Foto Menor 1" fill className="object-cover" /> */}
+                <Image 
+                  src="/imagens/sobre/imagem1.png" 
+                  alt="Naked Cake" 
+                  fill 
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+               />
               </div>
               <div className="w-full h-1/2 bg-fundo rounded-sm flex items-center justify-center border border-primaria/20 shadow-sm relative overflow-hidden group">
-                <span className="text-secundaria/60 font-sans text-xs md:text-sm z-10">[ Foto Menor 2 ]</span>
-                {/* <Image src="/caminho-foto2.jpg" alt="Foto Menor 2" fill className="object-cover" /> */}
+                <Image 
+                  src="/imagens/sobre/imagem2.png" 
+                  alt="Doces temáticos" 
+                  fill 
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+               />
               </div>
             </div>
 

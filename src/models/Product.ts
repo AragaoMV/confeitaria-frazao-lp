@@ -12,6 +12,7 @@ export interface Product {
     filling?: string;     
     fillingsList?: Fillings; 
     price?: string;
+    image?: string;
 }
 
 export interface SizeChartRow {

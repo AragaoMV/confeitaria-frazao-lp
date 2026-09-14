@@ -17,19 +17,22 @@ export function useCatalog() {
                     id: "pipoca-250",
                     name: "Pote 250 ML",
                     description: "Escolha até 2 recheios. Recheios disponíveis: Bueno, Ninho, Ovomaltine, Nutella e Pistache.",
-                    price: "R$ 20,00"
+                    price: "R$ 20,00",
+                    image: "/imagens/catalogo/pipocas/pipoca_pequena.jpeg"
                 },
                 {
                     id: "pipoca-500",
                     name: "Pote 500 ML",
                     description: "Escolha até 2 recheios. Recheios disponíveis: Bueno, Ninho, Ovomaltine, Nutella e Pistache.",
-                    price: "R$ 30,00"
+                    price: "R$ 30,00",
+                    image: "/imagens/catalogo/pipocas/pipoca_media.jpeg"
                 },
                 {
                     id: "pipoca-1l",
                     name: "Pote 1 Litro",
                     description: "Escolha até 3 recheios. Recheios disponíveis: Bueno, Ninho, Ovomaltine, Nutella e Pistache.",
-                    price: "R$ 45,00"
+                    price: "R$ 45,00",
+                    image: "/imagens/catalogo/pipocas/pipoca_grande.jpeg"
                 }
             ],
             importantInfo: []
@@ -41,19 +44,23 @@ export function useCatalog() {
                     id: "bolo-baunilha",
                     name: "Baunilha",
                     description: "Massa leve e macia, com sabor delicado de baunilha. Um clássico irresistível que derrete na boca.",
-                    fillingsList: recheiosPadrao
+                    fillingsList: recheiosPadrao,
+                    image: "/imagens/catalogo/bolos/baunilha.png"
                 },
                 {
                     id: "bolo-chocolate",
                     name: "Chocolate",
                     description: "Massa delicada e aerada, totalmente balanceada, com cacau 100%. Sabor intenso e textura leve.",
-                    fillingsList: recheiosPadrao
+                    fillingsList: recheiosPadrao,
+                    image: "/imagens/catalogo/bolos/chocolate.png"
                 },
                 {
                     id: "bolo-redvelvet",
                     name: "Red Velvet",
                     description: "Um clássico sofisticado: Massa vermelha aveludada com toque de cacau e iogurte.",
-                    fillingsList: recheiosPadrao
+                    fillingsList: recheiosPadrao,
+                    image: "/imagens/catalogo/bolos/red_velvet.jpeg"
+
                 }
             ],
             sizeChart: [
@@ -118,91 +125,110 @@ export function useCatalog() {
                     id: "modelado-cupcake",
                     name: "Cupcake",
                     description: "Cupcake com recheio de brigadeiro cremoso e aplique em pasta de leite em pó.",
-                    price: "2D: R$ 20,00 | 3D: R$ 25,00"
+                    price: "2D: R$ 20,00 | 3D: R$ 25,00",
+                    image: "/imagens/catalogo/doce-modelado/cupcake.png"
+
                 },
                 {
                     id: "modelado-pao-de-mel",
                     name: "Pão de Mel",
                     description: "Cobertura de chocolate recheada com pão de mel e doce de leite cozido na panela de pressão.",
-                    price: "2D: R$ 25,00 | 3D: R$ 32,00"
+                    price: "2D: R$ 25,00 | 3D: R$ 32,00",
+                    image: "/imagens/catalogo/doce-modelado/pao_de_mel.png"
                 },
                 {
                     id: "modelado-palha-italiana",
                     name: "Palha Italiana",
                     description: "Cobertura de chocolate, recheada com palha italiana.",
-                    price: "A partir de R$ 22,00"
+                    price: "A partir de R$ 22,00",
+                    image: "/imagens/catalogo/doce-modelado/palha_italiana.png"
                 },
                 {
                     id: "modelado-picole",
                     name: "Picolé",
                     description: "Cobertura de chocolate recheada com bolo e brigadeiro.",
-                    price: "A partir de R$ 24,00"
+                    price: "A partir de R$ 24,00",
+                    image: "/imagens/catalogo/doce-modelado/picole.png"
                 },
                 {
                     id: "modelado-casinha",
                     name: "Casinha",
                     description: "Cobertura de chocolate, recheada com brownie e doce de leite.",
-                    price: "A partir de R$ 25,00"
+                    price: "A partir de R$ 25,00",
+                    image: "/imagens/catalogo/doce-modelado/casinha.png"
                 },
                 {
                     id: "modelado-pirulito",
                     name: "Pirulito",
                     description: "Cobertura de chocolate com apliques em pasta de leite em pó.",
-                    price: "A partir de R$ 18,00"
+                    price: "A partir de R$ 18,00",
+                    image: "/imagens/catalogo/doce-modelado/pirulito.png"
                 },
                 {
                     id: "modelado-cone",
                     name: "Cone",
                     description: "Casquinha de sorvete, recheado com brigadeiro e blindada com cobertura de chocolate.",
-                    price: "A partir de R$ 28,00"
+                    price: "A partir de R$ 28,00",
+                    image: "/imagens/catalogo/doce-modelado/cone.png"
                 },
                 {
                     id: "modelado-bombom-duplo",
                     name: "Bombom Duplo",
                     description: "Cobertura de chocolate dupla, recheada com brownie e doce de leite.",
-                    price: "A partir de R$ 40,00"
+                    price: "A partir de R$ 40,00",
+                    image: "/imagens/catalogo/doce-modelado/bombom_duplo.png"
+
                 },
                 {
                     id: "modelado-cilindro",
                     name: "Cilindro",
                     description: "Cobertura de chocolate, recheada com brownie e doce de leite.",
-                    price: "A partir de R$ 42,00"
+                    price: "A partir de R$ 42,00",
+                    image: "/imagens/catalogo/doce-modelado/cilindro.png"
+
                 },
                 {
                     id: "modelado-cakepop",
                     name: "CakePop",
                     description: "Bolo misturado com leite condensado, banhado na cobertura de chocolate.",
-                    price: "A partir de R$ 18,00"
+                    price: "A partir de R$ 18,00",
+                    image: "/imagens/catalogo/doce-modelado/cake_pop.png"
+
                 },
                 {
                     id: "modelado-moldura",
                     name: "Moldura",
                     description: "Cobertura de chocolate com apliques em pasta de leite em pó.",
-                    price: "A partir de R$ 20,00"
+                    price: "A partir de R$ 20,00",
+                    image: "/imagens/catalogo/doce-modelado/moldura.png"
                 },
                 {
                     id: "modelado-mini-pao-de-mel",
                     name: "Mini Pão de Mel",
                     description: "Cobertura de chocolate recheada com pão de mel e doce de leite cozido na panela de pressão.",
-                    price: "2D: R$ 15,00 | 3D: R$ 20,00"
+                    price: "2D: R$ 15,00 | 3D: R$ 20,00",
+                    image: "/imagens/catalogo/doce-modelado/mini_pao_de_mel.png"
                 },
                 {
                     id: "modelado-trufa-dupla",
                     name: "Trufa Dupla",
                     description: "Cobertura de chocolate recheada, com apliques em pasta de leite em pó.",
-                    price: "A partir de R$ 16,00"
+                    price: "A partir de R$ 16,00",
+                    image: "/imagens/catalogo/doce-modelado/trufa_dupla.png"
                 },
                 {
                     id: "modelado-trufa",
                     name: "Trufa",
                     description: "Cobertura de chocolate recheada, com apliques em pasta de leite em pó.",
-                    price: "A partir de R$ 8,00"
+                    price: "A partir de R$ 8,00",
+                    image: "/imagens/catalogo/doce-modelado/trufa.png"
                 },
                 {
                     id: "modelado-trufa-quadrada",
                     name: "Trufa Quadrada",
                     description: "Cobertura de chocolate recheada, com apliques em pasta de leite em pó.",
-                    price: "A partir de R$ 8,00"
+                    price: "A partir de R$ 8,00",
+                    image: "/imagens/catalogo/doce-modelado/trufa_quadrada.png"
                 }
             ],
             importantInfo: [
